@@ -2,8 +2,8 @@ import Image from "next/image"
 import Link from "next/link"
 import { Coffee, Droplets, Candy, Instagram, Facebook, MessageSquare } from "lucide-react"
 import TikTokIcon from "@/components/TikTokIcon"
-
 import { Button } from "@/components/ui/button"
+import ReviewsSection from "@/components/ReviewsSection"
 
 export default function Home() {
   return (
@@ -253,61 +253,8 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Testimonials */}
-        <section className="py-16 bg-black text-white">
-          <div className="container">
-            <h2 className="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-black border border-pink-600 p-6 rounded-lg">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center mr-4">
-                    <span className="font-bold text-white">JM</span>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold">Jessica M.</h4>
-                    <p className="text-pink-400 text-sm">Wedding Client</p>
-                  </div>
-                </div>
-                <p className="text-gray-300">
-                  "Boujee Beverages was the highlight of our wedding reception! Guests couldn't stop talking about the
-                  amazing coffee and those freeze-dried candies were such a unique touch."
-                </p>
-              </div>
-
-              <div className="bg-black border border-pink-600 p-6 rounded-lg">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center mr-4">
-                    <span className="font-bold text-white">TK</span>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold">Thomas K.</h4>
-                    <p className="text-pink-400 text-sm">Corporate Event</p>
-                  </div>
-                </div>
-                <p className="text-gray-300">
-                  "We hired Boujee Beverages for our company's summer party and they exceeded all expectations.
-                  Professional service and the lemonade station was a massive hit in the heat!"
-                </p>
-              </div>
-
-              <div className="bg-black border border-pink-600 p-6 rounded-lg">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center mr-4">
-                    <span className="font-bold text-white">AL</span>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold">Aisha L.</h4>
-                    <p className="text-pink-400 text-sm">Birthday Party</p>
-                  </div>
-                </div>
-                <p className="text-gray-300">
-                  "The team at Boujee Beverages made my daughter's sweet 16 absolutely perfect. The setup was gorgeous
-                  and Instagram-worthy. The kids loved the candy and the adults appreciated the amazing coffee!"
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* Reviews Section */}
+        <ReviewsSection />
 
         {/* Contact/Booking Section */}
         <section id="contact" className="py-16 bg-white">
