@@ -61,7 +61,7 @@ export default function Home() {
                 <Button size="lg" className="bg-pink-600 hover:bg-pink-700">
                   Book Your Experience
                 </Button>
-                <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10">
+                <Button size="lg" className="bg-black text-white hover:bg-gray-800">
                   View Menu
                 </Button>
               </div>
