@@ -242,24 +242,6 @@ export default function GalleryPage() {
       </header>
 
       <main className="flex-1">
-        {/* Page Header */}
-        <section className="bg-pink-50 py-12">
-          <div className="container">
-            <div className="flex flex-col items-center text-center">
-              <Link href="/" className="flex items-center text-pink-600 mb-4 hover:underline">
-                <ChevronLeft className="h-4 w-4 mr-1" />
-                Back to Home
-              </Link>
-              <h1 className="text-4xl font-bold mb-4">Event Gallery</h1>
-              <p className="text-gray-700 max-w-2xl">
-                Browse through our collection of past events to see how Boujee Beverages can transform your special
-                occasion with our premium mobile beverage experience.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Gallery Section */}
         <section className="py-12">
           <div className="container">
             <Tabs defaultValue="all" className="w-full">
