@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Coffee, Droplets, Candy, Instagram, Facebook, Twitter } from "lucide-react"
+import { Coffee, Droplets, Candy, Instagram, Facebook, MessageSquare } from "lucide-react"
+import TikTokIcon from "@/components/TikTokIcon"
 
 import { Button } from "@/components/ui/button"
 
@@ -395,33 +396,33 @@ export default function Home() {
                   <div className="space-y-3">
                     <p className="flex items-center gap-2">
                       <span className="font-medium">Email:</span>
-                      <a href="mailto:hello@boujeebeverages.com" className="text-pink-600 hover:underline">
-                        hello@boujeebeverages.com
+                      <a href="mailto:luke@mcintoshins.com" className="text-pink-600 hover:underline">
+                        luke@mcintoshins.com
                       </a>
                     </p>
                     <p className="flex items-center gap-2">
                       <span className="font-medium">Phone:</span>
-                      <a href="tel:+15551234567" className="text-pink-600 hover:underline">
-                        (555) 123-4567
+                      <a href="tel:+18643143617" className="text-pink-600 hover:underline">
+                        (864) 314-3617
                       </a>
                     </p>
                     <p className="flex items-center gap-2">
                       <span className="font-medium">Service Area:</span>
-                      <span>Greater Metropolitan Area & Surrounding Counties</span>
+                      <span>Upstate South Carolina</span>
                     </p>
                   </div>
 
                   <div className="mt-6">
                     <h4 className="font-medium mb-2">Follow Us:</h4>
                     <div className="flex gap-4">
-                      <a href="#" className="text-pink-600 hover:text-pink-700">
+                      <a href="https://www.instagram.com/boujeebevco/" target="_blank" rel="noopener noreferrer" className="text-pink-600 hover:text-pink-700">
                         <Instagram className="h-6 w-6" />
                       </a>
-                      <a href="#" className="text-pink-600 hover:text-pink-700">
+                      <a href="https://www.facebook.com/profile.php?id=61551564351576" target="_blank" rel="noopener noreferrer" className="text-pink-600 hover:text-pink-700">
                         <Facebook className="h-6 w-6" />
                       </a>
-                      <a href="#" className="text-pink-600 hover:text-pink-700">
-                        <Twitter className="h-6 w-6" />
+                      <a href="https://www.tiktok.com/@boujeebevco" target="_blank" rel="noopener noreferrer" className="text-pink-600 hover:text-pink-700">
+                        <TikTokIcon className="h-6 w-6" />
                       </a>
                     </div>
                   </div>
