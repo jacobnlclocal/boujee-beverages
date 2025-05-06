@@ -74,13 +74,12 @@ export default function Home() {
           <div className="container">
             <h2 className="text-3xl font-bold text-center mb-12">About Boujee Beverages</h2>
             <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div>
+              <div className="relative aspect-square w-full max-w-md mx-auto">
                 <Image
                   src="/images/corporate-1.jpg"
                   alt="Corporate Event Setup"
-                  width={600}
-                  height={400}
-                  className="rounded-lg shadow-lg"
+                  fill
+                  className="rounded-lg shadow-lg object-cover"
                 />
               </div>
               <div>
@@ -129,7 +128,7 @@ export default function Home() {
             <div className="grid md:grid-cols-3 gap-8">
               {/* Coffee Menu */}
               <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                <div className="h-48 relative">
+                <div className="h-64 relative">
                   <Image
                     src="/images/wedding-2.jpg"
                     alt="Specialty Coffee"
@@ -168,12 +167,14 @@ export default function Home() {
 
               {/* Lemonade Menu */}
               <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                <div className="h-48 relative">
+                <div className="h-64 relative overflow-hidden">
                   <Image
                     src="/images/festival-1.jpg"
                     alt="Fresh Lemonade"
                     fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover"
+                    style={{ objectPosition: 'center top' }}
                   />
                   <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
                     <h3 className="text-2xl font-bold text-white">Fresh Lemonade</h3>
@@ -207,7 +208,7 @@ export default function Home() {
 
               {/* Candy Menu */}
               <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                <div className="h-48 relative">
+                <div className="h-64 relative">
                   <Image
                     src="/images/birthday-1.jpg"
                     alt="Freeze-Dried Candy"
